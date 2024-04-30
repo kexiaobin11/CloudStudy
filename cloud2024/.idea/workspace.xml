@@ -19,10 +19,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Documents/apache-maven-3.9.1" />
+        <option name="customMavenHome" value="$USER_HOME$/Documents/apache-maven-3.9.1" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="userSettingsFile" value="$USER_HOME$/Documents/apache-maven-3.9.6/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -30,31 +38,59 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fPdCHKvnZ6AwmInDrfSQZ426Zb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Maven.cloud-api-commons [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-consumer-order80 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-consumer-order80 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [org.apache.maven.plugins:maven-install-plugin:3.1.0:install-file].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [org.apache.maven.plugins:maven-install-plugin:3.1.0:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coud-api-commons [verify].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main80.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Main8001.executor&quot;: &quot;Run&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kexiaobin/Desktop/cloud2024/cloud-provider-payment8001/src/main/java/com/atguigu/cloud/mapper&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kexiaobin/Desktop/CloudStudy/cloud2024/cloud-api-commons/src/main/java/com/atguigu/cloud&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/kexiaobin/Desktop/cloud2024/mybatis_generator2024/src/main/java/com/atguigu/cloud/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="ReactorSettings">
@@ -65,10 +101,19 @@
       <recent name="com.atguigu.cloud.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/cloud/mapper" />
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/cloud" />
+      <recent name="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/atguigu/cloud" />
+      <recent name="$PROJECT_DIR$/cloud-api-commons/src" />
+      <recent name="$PROJECT_DIR$/coud-api-commons/src/main/java/com/atguigu/cloud" />
+      <recent name="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/cloud" />
+      <recent name="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Main8001">
     <configuration name="Main8001 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Main8001.http" requestIdentifier="#1" runType="Run single request">
@@ -76,6 +121,19 @@
     </configuration>
     <configuration name="Main8001 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Main8001.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="Main80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-order80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.cloud.Main80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider-payment8001" />
@@ -93,10 +151,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main8001" />
+        <item itemvalue="Spring Boot.Main80" />
         <item itemvalue="HTTP Request.Main8001 | #2" />
         <item itemvalue="HTTP Request.Main8001 | #1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,6 +174,12 @@
       <option name="presentableId" value="Default" />
       <updated>1681460728082</updated>
       <workItem from="1713686104146" duration="12540000" />
+      <workItem from="1713706518187" duration="221000" />
+      <workItem from="1713791698257" duration="265000" />
+      <workItem from="1713791978119" duration="1065000" />
+      <workItem from="1713833056312" duration="262000" />
+      <workItem from="1714475426116" duration="7961000" />
+      <workItem from="1714483557676" duration="1200000" />
     </task>
     <servers />
   </component>
