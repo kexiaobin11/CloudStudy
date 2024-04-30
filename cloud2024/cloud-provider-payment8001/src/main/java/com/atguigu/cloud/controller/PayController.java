@@ -10,6 +10,7 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
+import util.BeanCopyUtil;
 
 import java.util.*;
 
@@ -69,11 +70,10 @@ public class PayController {
     public ResultData<List<PayDto>> getAll() {
         try {
             List<Pay> pays = payService.getAll();
-//            List<PayDto> payDTOs = BeanCopyUtil.copyListProperties(pays, PayDTO::new);
-            return null;
+            List<PayDto> payDTOs = BeanCopyUtil.copyListProperties(pays, PayDto::new);
+            return ResultData.success(payDTOs);
         } catch (Exception e) {
             return ResultData.fail(e.getMessage());
         }
     }
-
 }
