@@ -4,6 +4,7 @@ import com.atguigu.cloud.entities.Pay;
 import com.atguigu.cloud.entities.PayDto;
 import com.atguigu.cloud.resp.ResultData;
 import com.atguigu.cloud.service.PayService;
+import com.atguigu.cloud.util.BeanCopyUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
@@ -11,9 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
-import util.BeanCopyUtil;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * @author kexiaobin
@@ -77,7 +77,7 @@ public class PayController {
         try {
             List<Pay> pays = payService.getAll();
             List<PayDto> payDTOs = BeanCopyUtil.copyListProperties(pays, PayDto::new);
-            System.out.println("8001");
+            System.out.println("8002");
             return ResultData.success(payDTOs);
         } catch (Exception e) {
             return ResultData.fail(e.getMessage());
