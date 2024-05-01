@@ -2,19 +2,26 @@ package com.atguigu.cloud.controller;
 
 import com.atguigu.cloud.entities.PayDto;
 import com.atguigu.cloud.resp.ResultData;
-import jakarta.annotation.Resource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * @author kexiaobin
+ */
 @RestController
 @RequestMapping("/consumer")
 public class OrderController {
-    public static String PAYMENT_SERVICE_URL = "http://localhost:8001";
 
-    @Resource
-    RestTemplate restTemplate;
+    public static String PAYMENT_SERVICE_URL = "http://cloud-payment-service";
+    private final RestTemplate restTemplate;
+
+    public OrderController(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
 
     @PostMapping("/pay/add")
     public Object addOrder(@RequestBody PayDto payDTO) {

@@ -9,16 +9,22 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import util.BeanCopyUtil;
 
 import java.util.*;
 
+/**
+ * @author kexiaobin
+ */
 @Tag(name = "支付微服务模块", description = "订单CRUD")
 @Slf4j
 @RestController
 @RequestMapping("/pay")
 public class PayController {
+    @Value("${server.port}")
+    private String port;
 
     @Resource
     private PayService payService;
@@ -75,5 +81,10 @@ public class PayController {
         } catch (Exception e) {
             return ResultData.fail(e.getMessage());
         }
+    }
+
+    @GetMapping("/get/info")
+    public String getInfoByConsul(@Value("${atguigu.info}") String atguiguInfo) {
+        return "atguiguInfo:" + atguiguInfo + "  port:" + port;
     }
 }

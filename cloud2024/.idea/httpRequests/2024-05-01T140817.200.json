@@ -1,0 +1,42 @@
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": [
+    {
+      "id": 1,
+      "payNo": "pay202403121420",
+      "orderNo": "202403121421",
+      "userId": 1,
+      "amount": 9.90
+    },
+    {
+      "id": 2,
+      "payNo": "pay202403122048",
+      "orderNo": "202403122048",
+      "userId": 1,
+      "amount": 9.90
+    },
+    {
+      "id": 3,
+      "payNo": "pay202403130910",
+      "orderNo": "202403130910",
+      "userId": 0,
+      "amount": 0.00
+    },
+    {
+      "id": 5,
+      "payNo": "pay2024031220499",
+      "orderNo": "20240312204799",
+      "userId": 1,
+      "amount": 9.90
+    },
+    {
+      "id": 6,
+      "payNo": "feign2024031220499",
+      "orderNo": "feign2024031220499",
+      "userId": 1,
+      "amount": 9.90
+    }
+  ],
+  "timestamp": 1714543697597
+}
