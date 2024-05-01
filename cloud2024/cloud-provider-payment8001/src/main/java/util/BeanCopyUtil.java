@@ -6,6 +6,9 @@ import org.springframework.beans.BeanUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
+/**
+ * @author kexiaobin
+ */
 public class BeanCopyUtil extends BeanUtils {
     /**
      * 集合数据的拷贝
