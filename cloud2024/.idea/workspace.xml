@@ -13,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -73,14 +73,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Main80.executor": "Run",
-    "Spring Boot.Main8000.executor": "Run",
+    "Spring Boot.Main8000.executor": "Coverage",
     "Spring Boot.Main8001.executor": "Run",
     "Spring Boot.Main8002.executor": "Run",
+    "Spring Boot.MainOpenFeign8000.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "4",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kexiaobin/Desktop/CloudStudy/cloud2024/cloud-provider-payment8002/src/main/java/com/atguigu/cloud",
+    "last_opened_file_path": "/Users/kexiaobin/Desktop/CloudStudy/cloud2024/cloud-api-commons/src/main/java/com/atguigu/cloud",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,11 +108,11 @@
       <recent name="com.atguigu.cloud.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/atguigu/cloud" />
+      <recent name="$PROJECT_DIR$/cloud-consumer-order-feign8000/src/main/resources" />
+      <recent name="$PROJECT_DIR$/cloud-consumer-order-feign8000/src/main/java/com/atguigu/cloud" />
       <recent name="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/cloud" />
       <recent name="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/atguigu/cloud" />
-      <recent name="$PROJECT_DIR$/cloud-api-commons/src" />
-      <recent name="$PROJECT_DIR$/coud-api-commons/src/main/java/com/atguigu/cloud" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,11 +122,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main8000">
+  <component name="RunManager" selected="Spring Boot.MainOpenFeign8000">
     <configuration name="Main8001 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Main8001.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Main8001 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Main8001.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Main8000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -167,13 +165,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainOpenFeign8000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-order-feign8000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.cloud.MainOpenFeign8000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Main8000" />
+        <item itemvalue="Spring Boot.MainOpenFeign8000" />
         <item itemvalue="Spring Boot.Main8001" />
         <item itemvalue="Spring Boot.Main8002" />
+        <item itemvalue="Spring Boot.Main8000" />
         <item itemvalue="HTTP Request.Main8001 | #1" />
-        <item itemvalue="HTTP Request.Main8001 | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +213,8 @@
       <workItem from="1714483557676" duration="1200000" />
       <workItem from="1714484764685" duration="573000" />
       <workItem from="1714539429238" duration="5627000" />
-      <workItem from="1714551852429" duration="3688000" />
+      <workItem from="1714551852429" duration="3834000" />
+      <workItem from="1714623924021" duration="4783000" />
     </task>
     <servers />
   </component>
@@ -222,12 +234,12 @@
           <line>33</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/cloud/Main8001.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cloud2024$Main8000.ic" NAME="Main8000 Coverage Results" MODIFIED="1714556704653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.atguigu.cloud.*</FILTER>
+    </SUITE>
   </component>
 </project>
