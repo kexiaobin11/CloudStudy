@@ -11,26 +11,23 @@ import java.util.List;
  * @author kexiaobin
  */
 @RestController
-@RequestMapping("fegin")
+@RequestMapping("feign")
 public class OrderController {
     @Resource
     private PayFeignApi payFeignApi;
 
     @PostMapping("/pay/add")
-    public ResultData addOrder(@RequestBody PayDto payDto) {
-        ResultData resultData = payFeignApi.addOrder(payDto);
-        return resultData;
+    public ResultData<PayDto> addOrder(@RequestBody PayDto payDto) {
+        return payFeignApi.addOrder(payDto);
     }
 
     @GetMapping(value = "/pay/getById/{id}")
-    public ResultData getPayInfo(@PathVariable("id") Long id) {
-        ResultData resultData = payFeignApi.getPayInfo(id);
-        return resultData;
+    public ResultData<PayDto> getPayInfo(@PathVariable("id") Integer id) {
+        return payFeignApi.getPayInfo(id);
     }
 
     @GetMapping(value = "/pay/getAll")
     public ResultData<List<PayDto>> getAll() {
-        ResultData<List<PayDto>> pays = payFeignApi.getAll();
-        return pays;
+        return payFeignApi.getAll();
     }
 }

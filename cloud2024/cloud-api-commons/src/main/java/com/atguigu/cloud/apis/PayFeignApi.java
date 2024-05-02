@@ -15,11 +15,14 @@ import java.util.*;
 @FeignClient(value = "cloud-payment-service")
 public interface PayFeignApi {
     @PostMapping(value = "/pay/add")
-    public ResultData addOrder(@RequestBody PayDto payDto);
+    ResultData<PayDto> addOrder(@RequestBody PayDto payDto);
 
     @GetMapping(value = "/pay/getById/{id}")
-    public ResultData getPayInfo(@PathVariable("id") Long id);
+    ResultData<PayDto> getPayInfo(@PathVariable("id") Integer  id);
 
     @GetMapping(value = "/pay/getAll")
-    public ResultData<List<PayDto>> getAll();
+    ResultData<List<PayDto>> getAll();
+
+    @GetMapping(value = "/pay/circuit/{id}")
+    String myCircuit(@PathVariable("id") Integer id);
 }
