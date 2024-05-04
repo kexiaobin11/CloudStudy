@@ -77,7 +77,6 @@ public class PayController {
         try {
             List<Pay> pays = payService.getAll();
             List<PayDto> payDTOs = BeanCopyUtil.copyListProperties(pays, PayDto::new);
-            System.out.println("8001");
             return ResultData.success(payDTOs);
         } catch (Exception e) {
             return ResultData.fail(e.getMessage());
