@@ -13,6 +13,11 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class PayCircuitController {
 
+    /**
+     * Resilience4f circuit breaker 的instance
+     * @param id
+     * @return
+     */
     @GetMapping(value = "/pay/circuit/{id}")
     public String myCircuit(@PathVariable("id") Integer id) {
         if (id == -4) throw new RuntimeException("circuit id 不能为负");
@@ -25,5 +30,30 @@ public class PayCircuitController {
             }
         }
         return "Hello, circuit! inputId:" + id + "\t" + IdUtil.simpleUUID();
+    }
+
+    /**
+     * Resilience4f bulkhead 的instance
+     * @param id
+     * @return
+     */
+    @GetMapping(value = "/pay/bulkhead/{id}")
+    public String myBulkhead(@PathVariable("id") Integer id) {
+        if (id == -4) throw new RuntimeException("bulkhead id 不能为负");
+
+        if (id == 9999) {
+            try {
+                TimeUnit.SECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        return "Hello, bulkhead! inputId:" + id + "\t" + IdUtil.simpleUUID();
+    }
+
+    @GetMapping(value = "/pay/ratelimit/{id}")
+    public String myRateLimit(@PathVariable("id") Integer id) {
+        if (id == -4) throw new RuntimeException("bulkhead id 不能为负");
+        return "Hello, rateLimit! inputId:" + id + "\t" + IdUtil.simpleUUID();
     }
 }
